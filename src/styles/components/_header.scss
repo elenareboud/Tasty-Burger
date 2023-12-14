@@ -1,0 +1,65 @@
+nav {
+  height: 6rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px var(--light-dark);
+  background-color: var(--red-dark);
+
+
+  >li, a, button {
+  font-family: "Roboto";
+  font-weight: 500;
+  color: white;
+  transition: color 0.3s;
+
+    &:hover {
+      color: var(--dark);
+    }
+  }
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+.nav__links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.iconeCart svg{
+  font-size: 2.5rem;
+}
+
+.iconeCart span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+    
+
+@media screen and (max-width: 768px) {
+
+  nav {
+    padding: 2rem 0.5rem;
+    box-sizing:content-box;
+    
+    > div 
+    > a {
+      margin: 0 0.2rem;
+    }
+
+    .nav__links {
+      width:  100%;
+      
+    > li {
+      display: block;
+      width: 100%;
+      text-align: center; 
+      padding: 10px 0; 
+    }
+    }
+  }
+} 

@@ -1,0 +1,30 @@
+.menu {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--pink);
+
+  > h1 {
+    font-size: 4.2rem;
+    text-align: center;
+    padding: 2rem;
+    color: var(--dark);
+  }
+
+}
+
+.menu-container {
+  padding: 2rem 4rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px 35px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .menu-container  {
+    flex-direction: column;
+  }
+
+}
+
