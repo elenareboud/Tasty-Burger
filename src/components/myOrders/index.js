@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineEye } from "react-icons/ai";
 
 const MyOrders = () => {
-  const arr = [1, 2, 3, 4];
+  const arr = [1, 2, 3, 4]; // ou tout autre tableau représentant les commandes
 
   return (
     <section className="tableClass">
@@ -19,24 +19,22 @@ const MyOrders = () => {
               <th>Action</th>
             </tr>
           </thead>
-
           <tbody>
-          {arr.map((orderId) => (
-              <tr key={orderId}>
-                <td>{orderId}</td>
+            {arr.map((i) => (
+              <tr key={i}>
+                <td>#sdkfsdfdsf</td>
                 <td>En cours de traitement</td>
-                <td>3</td>
+                <td>23</td>
                 <td>$2132</td>
-                <td>CB (Carte bleue)</td>
+                <td>CB</td>
                 <td>
-                  <Link to={`/order/${orderId}`}>
+                  <Link to={`/order/asdsds`}>
                     <AiOutlineEye />
                   </Link>
                 </td>
               </tr>
             ))}
           </tbody>
-
         </table>
       </main>
     </section>

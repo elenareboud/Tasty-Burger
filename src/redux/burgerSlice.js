@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { v4 as uuidv4} from "uuid";
+import { v4 as uuidv4 } from "uuid";
 
 const initialState = {
     burgers: [],
@@ -11,12 +11,12 @@ const burgerSlice = createSlice({
     initialState,
     reducers: {
         addBurger(state, action) {
-            state.burgers.push({...action.payload, id: uuidv4()});
+            state.burgers.push({ ...action.payload, id: uuidv4() });
         },
-        deleteBurger(state, action){
+        deleteBurger(state, action) {
             state.burgers = state.burgers.filter((burger) => burger.id !== action.payload.id);
         },
-        updateBurger(state, action){
+        updateBurger(state, action) {
             state.burgers = state.burgers.map((burger) => burger.id === action.payload.id ? action.payload : burger);
         },
         addToCart(state, action) {
@@ -25,6 +25,13 @@ const burgerSlice = createSlice({
     }
 });
 
-export const {addBurger, deleteBurger, updateBurger} = burgerSlice.actions
+export const {
+    addBurger,
+    deleteBurger,
+    updateBurger,
+    addToCart,
+    removeFromCart,
+    updateCartItemCount
+} = burgerSlice.actions
 
-export default  burgerSlice.reducer;
+export default burgerSlice.reducer;

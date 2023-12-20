@@ -1,5 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import { Provider } from 'react-redux';
+import { store } from "../src/redux/store";
 import "./App.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
@@ -8,14 +10,16 @@ import Menu from "./components/Menu";
 import Cart from "./components/Cart";
 import Contact from "./components/Contact";
 import Shipping from "./components/Shipping";
-import MyOrders from "./components/myOrders";
+import MyOrders from "./components/MyOrders";
 
 import OrderDetails from "./components/OrderDetails";
 import About from "./components/About";
 import Login from "./components/Login";
 
+
 function App() {
   return (
+    <Provider store={store}>
     <>
       <Header /> 
       <Routes>
@@ -28,10 +32,10 @@ function App() {
         <Route path="/myOrders" element={< MyOrders />} />
         <Route path="/order/:id" element={<OrderDetails />} />
         <Route path="/login" element={<Login />} />
-        
       </Routes>
       <Footer />
     </>
+    </Provider>
   );
 }
 

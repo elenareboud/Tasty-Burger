@@ -21,7 +21,7 @@ const Shipping = () => {
     setSelectedState(e.target.value);
   };
 
-  // const indianStates = State.getStatesOfCountry("IN");
+// const indianStates = State.getStatesOfCountry("IN");
   return (
     <section className="shipping-container">
       <div className="shipping">
@@ -52,7 +52,7 @@ const Shipping = () => {
               <option value="">Selectionner état/région</option>
               {State.getStatesOfCountry(selectedCountry).map((state) => (
                 <option key={state.isoCode} value={state.isoCode}>
-                  {state.name}
+                {state.name}
                 {/* {indianStates.map(state => (
                 <option value={state.isoCode}>{state.name} */}
               </option>
@@ -75,7 +75,7 @@ const Shipping = () => {
           <Popup className="popup" trigger=
             {<Link to="/myOrders" >Confirmer la commande</Link>}
             position="top right">
-            <div style={{ color: "red",   transform: 'translate(-20%)', backgroundColor: '#fff', padding: '10px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }}>
+            <div style={{ color: "red", fontWeight:'700',  transform: 'translate(-20%)', backgroundColor: '#fff', padding: '10px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }}>
               Commande confirmée
             </div>
           </Popup>

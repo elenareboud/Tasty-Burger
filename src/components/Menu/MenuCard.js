@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState }  from "react";
 import Popup from 'reactjs-popup';
 import "../../styles/components/_card.scss";
+
 
 
 const MenuCard = ({ itemNum, burgerSrc, price, title, handler}) => {
@@ -14,11 +15,13 @@ const MenuCard = ({ itemNum, burgerSrc, price, title, handler}) => {
         <Popup trigger=
           {<button onClick={() => handler(itemNum, price)}>Acheter</button>}
         >
-          <div className="popup" style={{ color: "red", fontWheight: "700", transform: 'translate(50%,-310%)', backgroundColor: '#fff', padding: '10px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }}>
+          <div className="popup" style={{ color: "red", fontWheight: "700", transform: 'translate(50%,-310%)', 
+          backgroundColor: '#fff', padding: '10px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }}
+          >
               Ajouté à votre panier!
           </div>
-
         </Popup>
+        
     </div>
     
   );
