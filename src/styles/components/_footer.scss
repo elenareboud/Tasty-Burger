@@ -1,38 +1,36 @@
 
 footer {
-  min-height: 150px;
+  min-height: 10px;
   background-color: var(--dark);
-  padding: 1.5rem;
+  padding: 1rem;
   color: white;height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
 
   > h3 {
     color: white;
-    font-family: fantasy;
     font-weight: 400;
     font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 
   p,
   strong {
-    margin: 0.5rem;
+    margin: 0.3rem;
   }
 
-  aside { 
-    height: 100%;
-    
   a {
       margin: 0.5rem;
       font-size: 2rem;
       color: white;
+
       &:hover {
         color: var(--red);
       }
     }
-  }
 }
 
 @media screen and (max-width: 600px) {

@@ -9,7 +9,7 @@ export const burgers = [
   {
     id: "burger2",
     title: "Frites",
-    price: 6.50,
+    price: 6.55,
     imageSrc: require("../../assets/frites.jpg"),
   },
   {

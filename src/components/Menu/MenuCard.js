@@ -1,29 +1,26 @@
 import React, { useState }  from "react";
-import Popup from 'reactjs-popup';
+import Modal from "./Modal";
 import "../../styles/components/_card.scss";
 
 
+const MenuCard = ({ item }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const toggleModal = () => setIsModalOpen(!isModalOpen);
 
-const MenuCard = ({ itemNum, burgerSrc, price, title, handler}) => {
   return (
     <div className="Card">
-        <img src={burgerSrc} alt={title} />
-
-        <h5>&euro;{price}</h5>
-
-        <p>{title}</p>
-        <Popup trigger=
-          {<button onClick={() => handler(itemNum, price)}>Acheter</button>}
-        >
-          <div className="popup" style={{ color: "red", fontWheight: "700", transform: 'translate(50%,-310%)', 
-          backgroundColor: '#fff', padding: '10px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }}
-          >
-              Ajouté à votre panier!
-          </div>
-        </Popup>
-        
+    <img src={item.imageSrc} alt={item.title} />
+      <h3>{item.price} &euro;</h3>
+      <p>{item.title}</p>
+      <button onClick={toggleModal}>Acheter</button>
+      {isModalOpen && (
+        <Modal
+          item={item}
+          isModalOpen={isModalOpen}
+          toggleModal={toggleModal}
+        />
+      )}
     </div>
-    
   );
 };
 

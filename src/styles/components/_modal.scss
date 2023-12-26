@@ -1,0 +1,130 @@
+.my-modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+
+  &.show {
+    display: block;
+  }
+
+  .my-modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10rem 20rem;
+    pointer-events: none;
+
+    .my-modal-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      pointer-events: auto;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      outline: 0;
+
+      .my-modal-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        border-bottom: 1px solid #dee2e6;
+
+        > h5 {
+          font-size: 1.2rem;
+        }
+
+        button {
+          padding: 0.8rem;
+          font-size: 1.3rem;
+        }
+      }
+
+      .my-modal-body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+        > img {
+          width: 200px;
+          height: 200px;
+          border-radius: 5px;
+        }
+      
+        button {
+          margin: 0.5rem;
+          padding: 0.7rem;
+          font-weight: 700;
+          background-color: var(--dark-light);
+          border: none;
+          color: #fff;
+
+          &.left {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+          }
+
+          &.right {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+        }
+      }
+
+      .modal-footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1rem;
+        border-top: 1px solid #dee2e6;
+
+        > button {
+          padding: 0.5rem;
+          margin-right: 0.5rem;
+          background-color: var(--red-dark);
+          color: white;
+          font-weight: 700;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+
+            &:hover {
+              background-color: var(--red);
+              color: var(--dark);
+          }
+        }
+      }
+    }
+  }
+  // @media (max-width: 1200px) {
+  //   .my-modal-dialog {
+  //     margin: 8rem 10rem;
+  //   }
+    
+  // }
+
+  // @media (max-width: 768px) {
+  //   .my-modal-dialog {
+  //     margin: 2rem 1.3rem;
+  //   }
+    
+  // }
+
+  // @media (max-width: 576px) {
+  //   .my-modal-dialog {
+  //     margin: 1rem 1rem;
+  //   }
+  // }
+}

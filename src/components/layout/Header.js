@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
 import { useSelector } from "react-redux";
-import "../../styles/components/_header.scss";
+
 
 const NavItem = ({ name, path }) => (
   <li >
@@ -15,8 +15,7 @@ const NavItem = ({ name, path }) => (
 
 function Header() {
   // const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
-  const burgers = useSelector((state) => state.burgerReducer.burgers);
-  const cartCount = burgers.length;
+  const cartCount = useSelector((state) => state.burgerReducer.cartCount);
 
   let pages = [
     { name: "Accueil", path: "/" },

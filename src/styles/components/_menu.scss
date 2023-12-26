@@ -4,27 +4,25 @@
   background-color: var(--pink);
 
   > h1 {
-    font-size: 4.2rem;
+    font-size: 3rem;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     color: var(--dark);
   }
-
 }
 
 .menu-container {
-  padding: 2rem 4rem 4rem;
+  padding: 0.8rem 1.8rem 3rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 35px 35px;
+  gap: 1rem;
+  background-color: var(--pink);
 }
 
 
-@media screen and (max-width: 600px) {
+@media(max-width: 567px) {
   .menu-container  {
     flex-direction: column;
   }
-
 }
 
