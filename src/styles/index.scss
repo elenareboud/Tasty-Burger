@@ -1,17 +1,17 @@
 
 
 
-@use './global';
+@use './variables';
 
 @use './components/about';
+@use './components/card';
 @use './components/cart';
 @use './components/contact';
-@use './components/dropdown';
 @use './components/footer';
-@use './components/founder';
 @use './components/header';
 @use './components/home';
 @use './components/login';
+@use './components/modal';
 @use './components/menu';
 @use './components/order';
 @use './components/profile';

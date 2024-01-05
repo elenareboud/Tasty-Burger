@@ -1,3 +1,11 @@
+$btn-hover:rgb(156, 0, 60);
+$btn:rgb(126, 0, 48);
+$dark: rgb(33, 33, 33);
+$shadow: rgba(33, 33, 33, .711);
+$background: rgb(255, 239, 239);
+$blue: #5971ee;
+$border: rgba(0, 0, 0, .2);
+
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -10,15 +18,7 @@
 
 html {
   overflow-y: scroll;
-  --red:rgb(156, 0, 60);
-  --red-dark:rgb(126, 0, 48);
-  --dark: rgb(33, 33, 33);
-  --dark-light: rgba(33, 33, 33, .711);
-  --pink: rgb(255, 239, 239);
-  --blue-light: #5971ee;
-  --border: rgba(0, 0, 0, .2);
-  --background: white;
-  --text: black;
+  
 }
 
 body {

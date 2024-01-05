@@ -1,3 +1,4 @@
+@use '../variables';
 
 .Card {
   background-color: white;
@@ -30,7 +31,7 @@
   }
 
   > button {
-      background-color: var(--red-dark);
+      background-color: variables.$btn;
       color: white;
       font-weight: 700;
       border: none;
@@ -43,8 +44,8 @@
       align-items: center; 
 
         &:hover {
-        background-color: var(--red);
-        color: var(--dark);
+        background-color: variables.$btn-hover;
+        color: variables.$dark;
       }
     }
     @media (max-width: 768px) {

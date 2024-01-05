@@ -1,3 +1,5 @@
+@use '../variables';
+
 .my-modal {
   display: none;
   position: fixed;
@@ -67,7 +69,7 @@
           margin: 0.5rem;
           padding: 0.7rem;
           font-weight: 700;
-          background-color: var(--dark-light);
+          background-color: variables.$shadow;
           border: none;
           color: #fff;
 
@@ -93,7 +95,7 @@
         > button {
           padding: 0.5rem;
           margin-right: 0.5rem;
-          background-color: var(--red-dark);
+          background-color: variables.$btn;
           color: white;
           font-weight: 700;
           border: none;
@@ -101,8 +103,8 @@
           cursor: pointer;
 
             &:hover {
-              background-color: var(--red);
-              color: var(--dark);
+              background-color: variables.$btn-hover;
+              color: variables.$dark;
           }
         }
       }

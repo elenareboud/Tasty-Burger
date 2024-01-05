@@ -1,6 +1,7 @@
+@use '../variables';
 
 .orderDetails {
-  background-color: var(--pink);
+  background-color: variables.$background;
   width: 100%;
 
   > main {

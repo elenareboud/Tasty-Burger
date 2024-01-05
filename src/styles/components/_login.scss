@@ -1,7 +1,9 @@
+@use '../variables';
+
 .login-container {
   max-width: 100%;
   height: 100vh;
-  background-color: var(--pink);
+  background-color: variables.$background;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +26,7 @@
       margin: 3rem;
       border: none;
       border-radius: 4px;
-      background-color:var(--blue-light);
+      background-color: variables.$blue;
       color: white;
       cursor: pointer;
       margin-bottom: 10px;
@@ -69,7 +71,7 @@
 
       > input {
             padding: 15px;
-            border: 1px solid var(--dark-light);
+            border: 1px solid variables.$shadow;
             border-radius: 4px;
 
           }
@@ -77,19 +79,19 @@
         }
     
       > .button-submit {
-        background-color: var(--blue-light);
+        background-color: variables.$blue;
         color: white;
         cursor: pointer;
         padding: 18px;
         width: 80%;
         margin-top: 3rem;
-        border: 0.5px solid var(--dark-light);
+        border: 0.5px solid variables.$shadow;
         font-weight: 700;
         border-radius: 4px;
 
 
           &:hover, &:active {
-            border: 2px solid black;
+            border: 2px solid variables.$dark;
             background-color: rgb(62, 63, 190);
         } 
       }

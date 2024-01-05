@@ -1,11 +1,13 @@
+@use '../variables';
+
 nav {
   height: 5rem;
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 0 10px var(--light-dark);
-  background-color: var(--red-dark);
+  box-shadow: 0 0 10px variables.$shadow;
+  background-color: variables.$btn;
 
 
   >li, a, button {
@@ -15,7 +17,7 @@ nav {
   transition: color 0.3s;
 
     &:hover {
-      color: var(--dark);
+      color: variables.$dark;
     }
   }
 }

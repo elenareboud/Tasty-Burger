@@ -55,5 +55,10 @@
     "@parcel/transformer-webmanifest": "^2.10.3",
     "parcel": "^2.10.3",
     "process": "^0.11.10"
-  }
+  },
+  "description": "---\r ## Project Status\r **Note**: This project is currently under development. \r Some features may be in a prototype stage or not yet implemented. \r Regular updates and improvements will be made. ",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

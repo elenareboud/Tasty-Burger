@@ -1,7 +1,8 @@
+@use '../variables';
 
 .about-container {
   width: 100%;
-  background-color: var(--pink);
+  background-color: variables.$background;
 
   & > h1 {
     padding: 3rem 3rem 1rem;
@@ -9,7 +10,7 @@
     font-size: 4rem;
     text-transform: uppercase;
     font-weight: 900;
-    color: var(--dark);
+    color: variables.$dark;
     
     & > span {
       font-style: italic;

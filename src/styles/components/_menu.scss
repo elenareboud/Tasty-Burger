@@ -1,13 +1,15 @@
+@use '../variables';
+
 .menu {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--pink);
+  background-color: variables.$background;
 
   > h1 {
     font-size: 3rem;
     text-align: center;
     padding: 1rem;
-    color: var(--dark);
+    color: variables.$dark;
   }
 }
 
@@ -16,7 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  background-color: var(--pink);
+  background-color: variables.$background;
 }
 
 
